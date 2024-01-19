@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  /* background-color: #181313; */
+  background-color: #041120;
+  /* overflow-x: hidden; */
+  /* overflow-y: hidden; */
+
+}
+
+
+
+.my-image {
+
+  height: 400px;
+  object-fit: contain;
+  width: 400px;
+  margin-top: 90px;
+  margin-right: 100px;
+  filter: drop-shadow(2px 2px 5px aliceblue);
+  border-radius: 50%;
+
+}
+
+.text {
+  width: 600px;
+  margin-left: -150px;
+  margin-right: 100px;
+
+}
+
+.my-image:hover {
+  transition: all ease 0.3s;
+  border: solid linear-gradient(to right, #2e0522 0%, #6986b8 51%, #74245d 100%) 5px;
+  background-image: linear-gradient(to right, #81767e 0%, #a6c1ee 51%, #0f0c0e 100%);
+}
+
+.parent-div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+
+}
+
+.name {
+  text-shadow: 0px 0px 2px;
+  font-size: 4rem;
+  /* font-size: 6vw; */
+  color: rgb(173, 171, 185);
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-top: 50px;
+  margin-right: 10px;
+  padding-left: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+  transition: all ease 1.5s;
+
+
+
+}
+
+.text1 {
+  padding-right: 10px;
+  color: aliceblue;
+  text-align: justify;
+  letter-spacing: 0.05rem;
+  line-height: 25px;
+
+}
+
+.container {
+  display: flex;
+  width: 100px;
+  min-height: 20px;
+  padding-top: 50px;
+  margin-top: -30px;
+  margin-left: 100px;
+}
+
+.btn {
+  display: flex;
+  margin: 10px;
+  padding: 30px;
+  padding-right: 10px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  color: black;
+  box-shadow: 0 0 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 1 rem;
+  font-weight: 700;
+  height: 50px;
+  transform: scale(1.1);
+
+}
+
+
+.btn:hover {
+  background-position: right center;
+  transition: ease 0.3s;
+}
+
+.btn-1 {
+  background-image: linear-gradient(to right, #eacda3 0%, #d6ae7b 51%, #eacda3 100%);
+  margin-right: 20px;
+}
+
+.btn-2 {
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+  margin-left: 70px;
+}
+.linkdein{
+  font-size: 2rem;
+  /* line-height: 2rem; */
+  /* height: 130px; */
+  padding-top: -20px;
+  text-align: center;
+}
+.github{
+  font-size: 2rem;
+  /* line-height: 2rem; */
+  /* height: 130px; */
+  padding-top: -20px;
+  text-align: center;
+}
+.new{
+  font-size: 1rem;
+}
+
+
+/* for making the website responsive */
+
+
+@media (max-width:600px) {
+  .container{
+    margin-left: -30px;
+  }
+  .text{
+    margin-left: 40px;
+    /* padding: -20px -20px; */
+  }
+  body{
+    overflow-x: hidden;
+  }
+  .text1{
+margin-left: -20px;
+margin-right: -15px;
+font-size: 14px;
+/* ga;  } */
+  
+}
+.my-image{
+  height: 300px;
+  width: 300px;
+  margin-left: 40px;
+}
+}

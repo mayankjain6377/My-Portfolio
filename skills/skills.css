@@ -1,0 +1,122 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100%;
+    /* background: #201d1d; */
+    background-color: #041120;
+    overflow-x: hidden;
+  
+  }
+.heading {
+    height: 100px;
+    width: 300px;
+    margin: auto;
+    line-height: 100px;
+    font-size: 4rem;
+    border-radius: 2rem;
+    border: #a6c1ee 3px solid;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 50px;
+    text-shadow: 2px 2px 15px rgb(128, 115, 0);
+  }
+  
+  .circle {
+    background-size: 100% 100%;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: rgb(240, 248, 255);
+    transition: ease 0.3s;
+  
+  
+  }
+  
+   .circle:hover {
+    transform: scale(1);
+  } 
+  
+  .circle1 {
+    background-image: url("./skill1.png");
+  }
+  
+  .circle2 {
+    background-image: url("./skill2.webp");
+  }
+  
+  .circle3 {
+    background-image: url("./skill3.webp");
+  }
+  
+  .circle4 {
+    background-image: url("./skill4.webp");
+  }
+  
+  .circle5 {
+    background-image: url("./skill5.avif");
+
+  }
+  
+  .circle6 {
+    background-image: url("./Bootstrap_logo.svg");
+    object-fit: contain;
+  }
+  
+  .skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-left: 20px;
+    display: grid;
+    /* grid-template-rows: 300px 300px ; */
+    grid-template-columns: repeat(2, 1fr);
+    flex-wrap: wrap;
+  
+  }
+  
+  .skill {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    /* background-color: #d6ae7b; */
+    /* background-image: linear-gradient(to right, #eacda3 0%, #d6ae7b  51%, #eacda3  100%);  */
+  
+    /* margin-bottom: 50px; */
+    display: flex;
+    
+    justify-content: center;
+    place-items: center;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+  
+  }
+
+  .skill:hover{
+    margin-left: 100px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    /* background: red; */
+    /* background-image: linear-gradient(); */
+  background-image: linear-gradient(to right, #81767e 0%, #a6c1ee 51%, #0f0c0e 100%);
+
+  }
+
+
+
+
+
+  @media (max-width:800px) {
+    .skills{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      justify-content: center;
+      
+    }
+    
+  }

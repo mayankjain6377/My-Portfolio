@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width: 100%;
+    height: 100vh;
+
+}
+body,
+h1,
+h2,
+ul {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'YourChosenFont', sans-serif;
+}
+.topnav {
+  padding-right: 30px;
+  overflow: hidden;
+  
+
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.logo::first-letter{
+    font-size: 200%;
+    color: rgb(164, 171, 168);
+    font-family: cursive;
+    margin-left: 50px;
+    /* margin-top: -50px; */
+}
+.logo{
+    /* color: antiquewhite; */
+    /* color: rgb(164, 171, 168); */
+    color: rgba(245, 245, 220, 0.519);
+    font-family: cursive;
+height: 5px;
+width: 100px;
+    font-size: 2rem;
+
+}
+.logo:hover{
+cursor: pointer;
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+}
+.logoimage{
+    width: 170px;
+    margin-top: -50px;
+    height: 170px;
+    background: none;
+}
+.topnav a:hover {
+  background-color: rgb(78, 80, 79);
+  border-radius: 5px;
+  color: rgb(202, 178, 178);
+
+}
+.imgcontainer{
+    background-image: url("landing.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    filter: brightness(0.6);
+
+}
+.image{
+   
+    display: grid;
+    justify-content: center;
+    align-items: center;
+/* margin-bottom: -80%;     */
+}
+.changeparent{
+    /* background-image: url("landing2.jpg"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-size: cover; 
+    height: 100vh;
+    width: 100%;
+    margin-bottom: -50%;
+    /* filter: filter(0.6); */
+    /* position: fixed; */
+/* overflow-y: hidden; */
+}
+.change1{
+display: none;
+}
+.heading{
+    margin-left: 100px;
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 25px;
+    color: rgba(255, 255, 233);
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.design{
+    color: rgba(245, 245, 220, 0.519);
+    font-size: 1.5rem;
+    margin-left: 100px;
+text-align: center;
+font-family: cursive;
+}
+.developer{
+    display: flex;
+    margin-left: 100px;
+    margin-top: 20px;
+    
+    
+}
+.developer h4{
+    color: rgba(255, 255, 233);
+    padding: 20px 20px;
+    font-family:cursive;
+}
+.contact{
+    height: 50px;
+    width: 120px;
+    border-radius: 1rem;
+    margin-left: 150px;
+    margin-top: 90px;
+}
+a{
+    text-decoration: none;
+    color: rgb(15, 15, 15);
+    font-size: 0.9rem;
+}
+.contact:hover{
+    cursor: pointer;
+    background: rgb(175, 192, 185);
+}
+.change{
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    margin-top: -35px;
+    float: right;
+    margin-right: 5px;
+    color: rgb(214, 211, 216);
+    font-weight: 700;
+    background-color: rgba(12, 55, 74, 0.785);
+}
+.change:hover{
+    cursor: pointer;
+    background-color: burlywood;
+    color: black;
+}
+
+
+@media (max-width:800px)
+{
+    .imgcontainer{
+        width: 500px;
+        height: 100%;
+    }
+    .image{
+        /* text-align: center; */
+        margin-left: -200px;
+    }
+    .change{
+        /* margin-left: -500px; */
+        /* margin-bottom: -100px; */
+        margin-top: 40px;
+        margin-right: 120px;
+    }
+
+    .changeparent{
+        width: 500px;
+        height: 100%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .topnav{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        /* padding-left: -40px; */
+        margin-left: -20px;
+        width: 95%;
+    }
+   .logoimage{
+    margin-top: -0.9rem;
+    margin-left: -25px;
+   }
+
+
+}

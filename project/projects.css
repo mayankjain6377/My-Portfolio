@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    height: 100vh;
+    width: 100%;
+    background-color: #041120;
+    /* overflow-x: hidden; */
+  }
+  .heading {
+    height: 120px;
+    width: 500px;
+    margin: auto;
+    line-height: 100px;
+    font-size: 4rem;
+    border-radius: 2rem;
+    border: #a6c1ee 3px solid;
+    text-align: center;
+    color: aliceblue;
+    margin-top: 50px;
+    text-shadow: 2px 2px 15px rgb(128, 115, 0);
+  }
+  .projects{
+    margin: 50px;
+  }
+  .game{
+    height: 300px;
+    width: 500px;
+    border-radius: 2rem;
+    border: gray 1px solid;
+}
+.technology{
+    letter-spacing: 0.05rem;
+}
+.game5{
+  object-fit: contain;
+}
+.icon{
+    display: flex;
+    color: aliceblue;
+    margin-left: 53%;
+    margin-top: -180px;
+    height: 150px;
+}
+.icon1{
+    font-size: 2rem;
+    margin-top: -15px;
+    margin-left: 30px;
+    margin-right: 20px;
+    gap: 30px;
+}
+.icon2{
+    margin-top: -140px;
+}
+.text1{
+    
+    height: 200px;
+    width: 500px;
+    margin-top: 10px;
+    padding: 10px;
+    padding-right: 5px;
+  color: aliceblue;
+  text-align: justify;
+  letter-spacing: 0.05rem;
+  line-height: 25px;
+
+}
+.icon .technology,.icon1
+  {
+    margin-top: 10px;
+  }.project{
+
+    display: flex;
+    margin-bottom: 100px;
+    border-radius: 10px; 
+    gap: 100px;
+  }
+  
+  .horizontal_line, .line {
+    height: 2px;
+    width: 550px;
+  background-image: linear-gradient(to right, #fbc2eb 0%, #a6c1ee 51%, #fbc2eb 100%);
+    position: relative;
+    overflow: hidden;
+    animation: moveLine 2s infinite;
+     margin-left: 10%;
+  }
+.loader {
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#d0bcbc 0 0);
+  background: 
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: l1 1s infinite linear;
+  margin-left: 30px;
+}
+.and{
+  display: flex;
+}
+@keyframes l1 {
+  0%  {background-size: 20% 100%,20% 100%,20% 100%}
+  33% {background-size: 20% 10% ,20% 100%,20% 100%}
+  50% {background-size: 20% 100%,20% 10% ,20% 100%}
+  66% {background-size: 20% 100%,20% 100%,20% 10% }
+  100%{background-size: 20% 100%,20% 100%,20% 100%}
+}
+ .gap{
+  width: 200px;
+  height: 100px;
+  margin-top: 50px;
+ }
+ 
+  
+  @keyframes moveLine {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100%); /* Adjust the distance the line moves */
+    }
+    100% {
+        transform: translateX(0);
+    }
+  }
+  
+  .work{
+    display: grid;
+    justify-content: center;
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  .work h1{
+    margin-bottom: 40px;
+    margin-top: -80px;
+    font-size: 2.5rem;
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  @media (max-width:600px) {
+    .heading{
+      width: 300px;
+      height: 100px;
+      font-size: 3rem;
+    }
+    .text1,.technology,.icon1,.icon2{
+      display: none;
+    }
+
+    .game{
+
+      width: 300px;
+      /* object-fit: contain; */
+    }
+    .work h1{
+      font-size: 1.28rem;
+      margin-top: -30px;
+      /* margin-right: -15px; */
+
+    }
+
+.horizontal_line, .line {
+  width: 300px;
+  /* margin-right: -190px; */
+}
+
+body{
+  overflow-x: hidden;
+}
+.loader{
+  height: 50px;
+  /* margin-left: -px; */
+  /* padding-left: -px; */
+}
+
+
+
+  }
+  
+  
+  
+  
+  
