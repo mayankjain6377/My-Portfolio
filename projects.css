@@ -7,7 +7,6 @@
     height: 100vh;
     width: 100%;
     background-color: #041120;
-    /* overflow-x: hidden; */
   }
   .heading {
     height: 120px;
@@ -157,30 +156,21 @@
     .game{
 
       width: 300px;
-      /* object-fit: contain; */
     }
     .work h1{
       font-size: 1.28rem;
       margin-top: -30px;
-      /* margin-right: -15px; */
-
     }
 
 .horizontal_line, .line {
   width: 300px;
-  /* margin-right: -190px; */
 }
-
 body{
   overflow-x: hidden;
 }
 .loader{
   height: 50px;
-  /* margin-left: -px; */
-  /* padding-left: -px; */
 }
-
-
 
   }
   

@@ -9,7 +9,6 @@ body{
     height: 100vh;
 
 }
-body,
 h1,
 h2,
 ul {
@@ -19,15 +18,22 @@ ul {
 body {
   font-family: 'YourChosenFont', sans-serif;
 }
-.topnav {
-  padding-right: 30px;
-  overflow: hidden;
-  
 
+.topnav {
+    top: 0;
+    right: 0;
+    /* padding-right: 20px; */
+    overflow: hidden;
+    margin-left: 47%;
+padding-top: 15px;    
+}
+.menu{
+    display: none;
 }
 
 .topnav a {
-  float: right;
+  float: left;
+  /* top: left; */
   display: block;
   color: white;
   text-align: center;
@@ -72,7 +78,7 @@ cursor: pointer;
 
 }
 .imgcontainer{
-    background-image: url("landing.jpg");
+    background-image: url("landing.webp");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-size: cover;
@@ -157,6 +163,7 @@ a{
     color: rgb(214, 211, 216);
     font-weight: 700;
     background-color: rgba(12, 55, 74, 0.785);
+    /* position: fixed; */
 }
 .change:hover{
     cursor: pointer;
@@ -167,6 +174,12 @@ a{
 
 @media (max-width:800px)
 {
+    .top1{
+        display: none;
+    }
+
+
+
     .imgcontainer{
         width: 500px;
         height: 100%;
@@ -175,11 +188,19 @@ a{
         /* text-align: center; */
         margin-left: -200px;
     }
+    
     .change{
-        /* margin-left: -500px; */
-        /* margin-bottom: -100px; */
-        margin-top: 40px;
-        margin-right: 120px;
+        padding: 10px;
+        border-radius: 15px;
+        border: none;
+        margin-left: 48%;
+        margin-top: 12px;
+        position: fixed;
+        /* float: right; */
+        /* margin-right: 5px; */
+        color: rgb(214, 211, 216);
+        font-weight: 700;
+        background-color: rgba(12, 55, 74, 0.785);
     }
 
     .changeparent{
@@ -190,12 +211,24 @@ a{
         overflow-x: hidden;
         overflow-y: hidden;
     }
+    /*  */
+   .menu{
+    display: block;
+color: aliceblue;
+font-size: 2rem;
+margin-left: 70%;
+   }
     .topnav{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         /* padding-left: -40px; */
-        margin-left: -20px;
+        margin-left: -25px;
         width: 95%;
+        padding-top: -15px;
+    }
+    .topnav a{
+        padding: 8px 8px;
+        padding-right: -5px;
     }
    .logoimage{
     margin-top: -0.9rem;
