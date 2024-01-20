@@ -193,7 +193,7 @@ a{
         padding: 10px;
         border-radius: 15px;
         border: none;
-        margin-left: 48%;
+        margin-left: 200px    ;
         margin-top: 12px;
         position: fixed;
         /* float: right; */
@@ -216,14 +216,14 @@ a{
     display: block;
 color: aliceblue;
 font-size: 2rem;
-margin-left: 70%;
+margin-left: 350px;
    }
     .topnav{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         /* padding-left: -40px; */
         margin-left: -25px;
-        width: 95%;
+        width: 450px;
         padding-top: -15px;
     }
     .topnav a{
