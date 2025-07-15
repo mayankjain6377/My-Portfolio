@@ -1,8 +1,12 @@
 
-const serviceId = 'service_47xmxzh';
+const serviceId = 'service_rdu9rno';
 const templateId = 'template_wfiv4hd';
 const formId = 'form';
-const publicKey = 'fnEQiF1n8FNQEgZgt';
+const publicKey = '7QDQwlJx6mErA2b6Y';
+  //   const SERVICE_ID = 'service_rdu9rno'; 
+  // // Replace with your EmailJS service ID
+  //   const TEMPLATE_ID = 'template_wfiv4hd'; // Replace with your EmailJS template ID
+  //   const PUBLIC_KEY = '7QDQwlJx6mErA2b6Y';
 document.getElementById(formId).addEventListener('submit', function (event) {
   event.preventDefault();
   document.getElementById('send2').innerText = 'Message sent successfully! ✅ ';
